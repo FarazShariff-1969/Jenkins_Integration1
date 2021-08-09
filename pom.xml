@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.apache.maven</groupId>
+    <artifactId>maven-artifact</artifactId>
+    <version>1.0.0</version>
+    <build>
+     <plugins>
+       <plugin>
+       <groupId>org.jacoco</groupId>
+       <artifactId>jacoco-maven-plugin</artifactId>
+       <version>0.8.5</version>
+     <executions>
+      <execution>
+        <id>prepare-agent</id>
+        <goals>
+         <goal>prepare-agent</goal>
+        </goals>
+      </execution>
+      <execution>
+        <id>report</id>
+        <goals>
+         <goal>report</goal>
+        </goals>
+      </execution>
+    </executions>
+    </plugin>
+   </plugins>
+  </build>
+
+    <properties>
+       <sonar.projectKey>md4abrar_SonarQube</sonar.projectKey>
+       <sonar.organization>md4abrar</sonar.organization>
+       <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+       <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+</project>
